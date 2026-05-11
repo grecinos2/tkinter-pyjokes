@@ -12,7 +12,7 @@ class TkinterPyJokes:
     LABEL_COLOR = "#000099"
     LABEL_SELECTED_COLOR = "#990000"
     PY_JOKE_CATEGORIES = ["Neutral", "All", "Chuck", "Chuck", "Neutral", "All", "All", "Chuck", "Neutral"]
-    ENDING_SOUNDS = [0,7] #This is in relation to the sound effects stored within the game_tiles list
+    ENDING_SOUNDS = [0,7] #This is in relation to the sound effects stored within the game_tiles list.
 
     def __init__(self):
         self.root = tk.Tk()
