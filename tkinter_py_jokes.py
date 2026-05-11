@@ -55,7 +55,7 @@ class TkinterPyJokes:
                 sound_file = f"{self.SOUND_EFFECTS_DIRECTORY}/s{index}.mp3"
                 self.game_tiles.append((pygame.mixer.Sound(sound_file), label, self.PY_JOKE_CATEGORIES[index]))
 
-    def reset_label_color(self):
+    def reset_tile_color(self):
         if self.current_tile is not None:
             self.game_tiles[self.current_tile][1].config(bg=self.LABEL_COLOR)
 
@@ -81,7 +81,7 @@ class TkinterPyJokes:
             if self.game_loops == 0:
                 self.start_button.config(state="disabled") #Disable the start button
                 self.joke_label.config(text="PyJoke: ......")
-            self.reset_label_color()
+            self.reset_tile_color()
             rand_num = random.randint(0, len(self.game_tiles)-1)
             self.game_tiles[rand_num][1].config(bg=self.LABEL_SELECTED_COLOR)
             self.current_tile = rand_num
