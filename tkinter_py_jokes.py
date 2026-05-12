@@ -24,6 +24,7 @@ class TkinterPyJokes:
         self.sound_channel = None
         self.game_loops = 0
         self.initialize()
+        self.root.mainloop()
 
     def initialize(self):
         self.root.title("Random PyJokes")
@@ -36,7 +37,7 @@ class TkinterPyJokes:
         self.sound_channel = pygame.mixer.Channel(0)
         self.sound_channel.set_volume(self.SOUND_VOLUME)
         self.create_game_tiles()
-        self.root.mainloop()
+
 
     def create_game_tiles(self):
         for row in range(3):
