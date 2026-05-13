@@ -16,4 +16,4 @@ It requires the following libraries:
 
 Usage:  python .\tkinter_pyjokes.py
 
-Note:  If it doesn't work, you may need to use Python 3.12 to get it to work. Specifically while installing the pygame library.
+Note:  If it doesn't work, you may need to use Python 3.12 to get it to work. Specifically for the pygame library.
