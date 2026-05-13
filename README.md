@@ -14,6 +14,6 @@ It requires the following libraries:
 * random
 * pyjokes
 
-Usage:  python .\tkinter_py_jokes.py
+Usage:  python .\tkinter_pyjokes.py
 
 Note:  If it doesn't work, you may need to use Python 3.12 to get it to work. Specifically while installing the pygame Library.
