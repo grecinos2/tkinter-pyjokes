@@ -71,7 +71,7 @@ class TkinterPyJokes:
             self.sound_channel.play(self.game_tiles[self.current_tile][0])
 
     def start(self):
-        if self.game_loops == self.MAX_LOOPS: #The
+        if self.game_loops == self.MAX_LOOPS: #The end of the game round has been reached
             self.root.after_cancel(self.after_id)
             self.start_button.config(state="normal") #Enable the start button
             joke_category = self.game_tiles[self.current_tile][2].lower()
